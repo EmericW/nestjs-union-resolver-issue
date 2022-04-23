@@ -1,0 +1,15 @@
+type Book {
+    title: String
+    pages: Int
+}
+
+type Movie {
+    title: String
+    duration: Int
+}
+
+union ResultItem = Book | Movie
+
+type Query {
+    items: [ResultItem]
+}
